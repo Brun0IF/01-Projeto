@@ -1,0 +1,19 @@
+:root { 
+  --cor-body-background: #faf6e3 /* cor de fundo da página */
+  --cor-tipografia-geral: #222; /* cor para letras - tipografia */
+  --cor-menu-background: #fa9a0a; /* cor de fundo para o menu */
+  --cor-titulo-animais: #c13829; /* cor dos nomes dos animais */
+}
+
+body, h1, h2, ul, li, p, dd, dt, dl {
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
