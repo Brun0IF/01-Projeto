@@ -8,12 +8,19 @@
 body, h1, h2, ul, li, p, dd, dt, dl {
   margin: 0px;
   padding: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%; /* evita que as imagens ocupem mais de 100% do container*/
   
 }
 
-
+ul {
+  list-style: none; /* zera o estilo da lista */
+}
 
 .menu {
   display: flex;
-  justify-content: space-between;
+  margin: 10px;
 }
