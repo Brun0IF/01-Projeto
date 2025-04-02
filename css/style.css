@@ -35,8 +35,16 @@ body {
   background: var(--cor-menu-background);
 }
 
-.menu ul{
+.menu ul {
   display: flex; /*colocar um item do lado do outro automaticamente */
-  
+  flex-wrap: wrap; /* se a quantidade de itens for maior que o container, quebra a linha */
+  padding: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  margin-right: 10px;
+  color: var(--cor-tipografia-geral);
 }
 
