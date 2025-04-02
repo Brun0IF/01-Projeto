@@ -3,6 +3,7 @@
   --cor-tipografia-geral: #222; /* cor para letras - tipografia */
   --cor-menu-background: #fa9a0a; /* cor de fundo para o menu */
   --cor-titulo-animais: #c13829; /* cor dos nomes dos animais */
+  --cor-tipografia-faq: #e54;
 }
 
 body, h1, h2, ul, li, p, dd, dt, dl {
@@ -66,7 +67,7 @@ body {
 }
 
 .titulo {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Inter' , monospace;
   font-size: 6rem;
   line-height: 1;
   font-weight: 400;
@@ -87,7 +88,7 @@ body {
 }
 
 .animal-descricao h2 {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Inter' , monospace;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -100,4 +101,58 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   list-style: 1.2;
   margin-bottom: 1rem;
+
+}
+
+.faq-lista {
+  grid-column: 1;
+
+}
+
+.faq-lista dt {
+  font-family: 'Inter' , monospace;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  color: var(--cor-tipografia-faq);
+}
+
+.faq-lista dt::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background: var(--cor-menu-background);
+  
+}
+
+.faq-lista dd {
+  font-family: Helvetica, sans-serif;
+  margin-bottom: .5rem;
+  margin-left: 30px;
+}
+
+
+.dados {
+  grid-column: 1;
+}
+
+.dados li {
+  margin-bottom: 1rem;
+  font-family: 'Inter', monospace;
+
+}
+
+.dados li::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background: var(--cor-menu-background);
+}
+
+.copy {
+  grid-column: 1;
 }
