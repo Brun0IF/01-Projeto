@@ -80,3 +80,24 @@ body {
   gap: 20px; /* espaço entre os elementos*/
 }
 
+.animal-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.animal-descricao h2 {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-bottom: 1rem;
+  color: var(--cor-titulo-animais);
+}
+
+.animal-descricao p {
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: 1.2;
+  margin-bottom: 1rem;
+}
