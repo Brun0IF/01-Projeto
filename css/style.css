@@ -20,7 +20,23 @@ ul {
   list-style: none; /* zera o estilo da lista */
 }
 
-.menu {
-  display: flex;
-  margin: 10px;
+body {
+  background: var(--cor-body-background);
+  color: var(--cor-tipografia-geral);
+  -webkit-font-smoothing: antialiasing;
+  display: grid;
+  grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr; 
 }
+
+.menu {
+  grid-column: 3 / 5;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: var(--cor-menu-background);
+}
+
+.menu ul{
+  display: flex; /*colocar um item do lado do outro automaticamente */
+  
+}
+
