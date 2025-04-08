@@ -82,17 +82,20 @@ gridSelectionNode.forEach(function(gridItem, index, array){
 //04 - Selecione o primeiro h2 dentro de .animal-descricao
 
 //01 -
-const todasImagens = document.querySelectorAll('img');
-console.log(todasImagens);
+const img = document.querySelectorAll('img');
+console.log(img);
 
 //02 - 
-
+const todasImagens = document.querySelectorAll('img[src^="img/imagem"]');
+console.log(todasImagens);
 
 //03 -
-
+const todosLinks = document.querySelectorAll('[href^="#"]');
+console.log(todosLinks);
 
 //04 - 
-const primeiroH2 = document.querySelector('h2');
+const animaisH2 = document.querySelector('.animal-descricao');
+const primeiroH2 = animaisH2.querySelector('h2');
 console.log(primeiroH2);
 
 
