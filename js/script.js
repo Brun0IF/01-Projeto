@@ -86,7 +86,7 @@ const img = document.querySelectorAll('img');
 console.log(img);
 
 //02 - 
-const todasImagens = document.querySelectorAll('img[src^="img/imagem"]');
+const todasImagens = document.querySelectorAll('img[src^="/img/imagem"]');
 console.log(todasImagens);
 
 //03 -
