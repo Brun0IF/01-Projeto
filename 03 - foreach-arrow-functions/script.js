@@ -1,4 +1,5 @@
 //foreach e arrow functions
+
 //a melhor maneira de selecionar é com query
 //método forEach
 
@@ -22,4 +23,22 @@ const titulosArray = Array.from(titulos);
 console.log(titulosArray);
 //A classe Array tem o método from, que converte em um array
 
+// Arrow function
+//É uma sintaxe curta em relação a function expression - function
+// => arrow
 
+const imagens = document.querySelectorAll('img');
+
+//imgs.forEach(function(item){})
+imagens.forEach((item)=>{
+//console.log(item);
+});
+
+imagens.forEach((item, index)=>{
+  console.log(item,index);
+});
+
+let i = 0;
+imagens.forEach(()=>{
+  console.log(i++);
+})
