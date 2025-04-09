@@ -16,7 +16,7 @@ menu.classList.remove('mobile');
 const contem = menu.classList.contains('ativo');
 // console.log(contem);
 
-menu.classList.replace('ativo', 'inativo');
+//menu.classList.replace('ativo', 'inativo');
 
 //attributes - retorna um array-like com os atributos do elemento;
 
@@ -28,7 +28,7 @@ const animais = document.querySelector('.animais');
 //setAttribute - setar/atribuir
 
 const img = document.querySelector('img');
-console.log(img);
+// console.log(img);
 
 // console.log(img.getAttribute('src'));
 img.setAttribute('alt', 'Texto alternativo');
@@ -48,3 +48,25 @@ const meusAnimais = document.querySelector('.animal');
 
 // meusAnimais.className = 'azul'; - substitui completamente a string 
 
+
+
+
+//adicione a classe ativo a todos os itens do menu
+
+const itensMenu = document.querySelectorAll('.menu a');
+console.log(itensMenu);
+itensMenu.forEach((item) =>{
+  item.classList.add('ativo');
+});
+
+//remova a classe ativo de todos os itens do menu
+//mantenha apenas no primeiro
+itensMenu.forEach((item) =>{
+  item.classList.remove('ativo');
+});
+itensMenu[0].classList.add('ativo');
+
+
+//verifique se as imagens possuem o atributo alt
+
+//modifique o href do link externo no menu
