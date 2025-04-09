@@ -69,4 +69,16 @@ itensMenu[0].classList.add('ativo');
 
 //verifique se as imagens possuem o atributo alt
 
+const pegarImagens = document.querySelectorAll('img');
+pegarImagens.forEach((img)=>{
+  const possuiAlt = img.hasAttribute('alt');
+  console.log(img, possuiAlt);
+})
+
 //modifique o href do link externo no menu
+//bri.ifsp.edu.br => www.google.com.br
+
+const link = document.querySelector('a[href^="http"');
+link.setAttribute('href', 'https://www.google.com.br');
+
+console.log(link)
