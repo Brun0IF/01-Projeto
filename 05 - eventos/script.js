@@ -53,3 +53,13 @@ function callKey(e){
     document.body.classList.toogle('verde');
   }
 }
+
+
+function showOnly(index){
+  
+
+
+
+
+  activeIndex = index;
+}
