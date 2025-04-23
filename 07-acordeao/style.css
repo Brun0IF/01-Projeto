@@ -204,6 +204,6 @@ body {
 }
 
 
-.js-accordion {
-  
+.js-accordion dd{
+  display: none;
 }

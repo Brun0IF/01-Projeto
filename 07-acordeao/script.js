@@ -10,8 +10,9 @@ function intAccordion() {
 
   const accordion = document.querySelectorAll('.js-accordion dt');
 
-  function accordionList(){
-    console.log('clicou no dt');
+
+  function activeAccordion(){
+    
   }
 
 
